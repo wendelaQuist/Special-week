@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./coupon.css">
+    <title>Coupon</title>
+</head>
+<body>
+
+    <div id="app">
+        <div class="coupon">
+            <div class="container">
+                <h3>Company Logo</h3>
+            </div>
+            <img src="./logo.png" alt="Avatar" style="width:100%;">
+            <div class="container" style="background-color:white">
+            <h2><b>20% OFF YOUR PURCHASE</b></h2> 
+            <p>{{ code }}</p>
+            </div>
+            <div class="container">
+            <p>{{ promo }}</p>
+            <p class="expire">Expires: Jan 03, 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./coupon.js"></script>
+    
+</body>
+</html>
