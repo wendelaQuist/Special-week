@@ -1,8 +1,13 @@
+#app{
+  padding-top: 150px;
+}
+
 .coupon {
     border: 5px dotted #bbb;
     width: 80%;
     border-radius: 15px;
-    margin: 0 auto;
+    margin: 0px auto;
+    max-height: auto;
     max-width: 600px;
   }
   

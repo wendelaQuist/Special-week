@@ -12,6 +12,7 @@ body{
 #navigationbar{
     background-color: white;
     position: absolute;
+    width: 100%;
 }
 
 .logo{
@@ -23,7 +24,7 @@ body{
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #0076AB;
 }
 
 .topnav a {
@@ -36,15 +37,18 @@ body{
 }
 
 .topnav a:hover {
-    background-color: #e21737;
+    background-color: #DEDEDE;
+    cursor: default;
 }
 
 .topnav a.active {
     background-color: #e21737;
+    cursor: pointer;
 }
 
 .topnav a.betaling{
     background-color: #3F7F00;
+    cursor: pointer;
 }
 
 .topnav-centered a {
@@ -53,4 +57,11 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#coupon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25%;
 }

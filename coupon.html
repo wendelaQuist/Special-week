@@ -5,24 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./coupon.css">
+    <link rel="stylesheet" href="./dom-overview.css">
     <title>Coupon</title>
 </head>
 <body>
 
+    <div id="navigationbar">
+        <div class="logo">
+            <a href="./dom-overview.html"><img src="./logo.png" height="80px"></a> 
+            <div class="topnav">
+                <div class="topnav-centered">
+                    <a href="#PIZZA'S" class="active">PIZZA'S</a>
+                    <a href="#CRUNCHY CHICKEN">CRUNCHY CHICKEN</a>
+                    <a href="#BIJGERECHTEN">BIJGERECHTEN</a>
+                    <a href="#DESSERTS & DRANKJES">BIJGERECHTEN</a>
+                    <a href="#BETALING"class="betaling" >BETALING</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="app">
         <div class="coupon">
             <div class="container">
-                <h3>Company Logo</h3>
+                <h3>BETERE DOMINO'S PIZZA</h3>
             </div>
             <img src="./logo.png" alt="Avatar" style="width:100%;">
             <div class="container" style="background-color:white">
-            <h2><b>20% OFF YOUR PURCHASE</b></h2> 
-            <p>{{ code }}</p>
+                <h2><b>20% OFF YOUR PURCHASE</b></h2> 
+                <p>{{ code }}</p>
             </div>
             <div class="container">
-            <p>{{ promo }}</p>
-            <p class="expire">Expires: Jan 03, 2021</p>
-        </div>
+                <p>{{ promo }}</p>
+                <p class="expire">Expires: Jan 03, 2021</p>
+                <button v-on:click = "rndStr">Klik hier voor je coupons</button>
+            </div>
       </div>
     </div>
 

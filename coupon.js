@@ -1,44 +1,42 @@
 var app = new Vue({
     el: '#app',
     data: {
-        promo: "BOH232",
+        promo: " ",
         lijst: [],
-        code: "konijn"
+        code: " CODE: ",
+        message1: "",
+        coupon: false
     },
     methods: {
-        rndStr(len) {
+        rndStr() {
           let text = ""
           let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
       
-        for( let i=0; i < len; i++ ) {
-                  text += chars.charAt(Math.floor(Math.random() * chars.length))
+            for( let i=0; i < 5; i++ ) {
+                    text += chars.charAt(Math.floor(Math.random() * chars.length))
+            }
+            this.promo=text,
+            this.lijst.push(text)
+        
         }
-  
-              return text
-          }
     },
     mounted () {
-        setInterval(() => {
-          let promo = this.rndStr(5)
-          this.lijst.push(promo)
-          this.promo = promo
-          console.log(this.lijst)
 
         for(let i = 0; i < this.lijst.length; i++){
             if(this.code == this.lijst[i]){
-                console.log("Code klopt");
-                return
-            }
-            else{
-                console.log("je bent skeer");
-                return
+                this.coupon = true;
+                break;
             }
         }
-        }, 10000000000000)
-        
-    },
 
-    checking () {
+        if(this.coupon == true){
+            console.log('Code klopt')
+            this.message1="Coupon klopt"
+        }
+        else{
+            console.log('Coupon is incorrect')
+        }
+        
         
     }
     

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dom-overview.css">
     <link rel="icon" href="./logo.png">
-    <title>Pizza's - Domino's Online Bestellen</title>
+    <title>Pizza's - Betere Domino's Online Bestellen</title>
 </head>
 <body>
 
@@ -18,16 +18,22 @@
                     <a href="#PIZZA'S" class="active">PIZZA'S</a>
                     <a href="#CRUNCHY CHICKEN">CRUNCHY CHICKEN</a>
                     <a href="#BIJGERECHTEN">BIJGERECHTEN</a>
-                    <a href="#DESSERTS & DRANKJES">BIJGERECHTEN</a>
+                    <a href="#DESSERTS & DRANKJES">DESSERTS & DRANKJES</a>
                     <a href="#BETALING"class="betaling" >BETALING</a>
                 </div>
             </div>
         </div>
     </div>
 
-    template
+    <a id="coupon" href="./coupon.html">Check coupons</a> 
     
-    <script src="./dom-overview.js"></script>
+    <div id="app">
+        <input v-model="message" placeholder="Couponcode"><button v-on:click="check">OK</button>
+        <p>Message is: {{ message1 }}</p>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./dom-overview.js"></script>
+
 </body>
 </html>
