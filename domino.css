@@ -1,0 +1,28 @@
+
+.button{
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  text-align: center;
+  color: #ff344c;
+
+  border: solid  2px #ff344c;
+  border-radius: 50px;
+
+  padding: 10px 15px;
+
+  transition-duration: 200ms;
+  text-decoration: none;
+  
+  
+}
+
+.pizza{
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+ 
+}
+.pizza1{
+  
+}

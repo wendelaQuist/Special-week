@@ -1,0 +1,30 @@
+{
+      "products": [
+        {
+          "image": "pizza-salami.png",
+          "id": 1,
+          "name": "salami",
+          "quantity": 1
+           
+        },
+        {
+          "id": 2,
+          "name": "hawai",
+          "quantity": 1,
+          "image": "pizza hawai.png"
+        },
+        {
+          "id": 3,
+          "name": "shoarma",
+          "quantity": 1,
+          "image": "pizza funghi.png"
+        },
+        {
+            "id": 4,
+            "name": "funghi",
+            "quantity": 1,
+             "image": "pizza shoarma.png"
+          }
+      ]
+      
+    }
